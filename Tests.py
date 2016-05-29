@@ -2,6 +2,7 @@ from tkinter import Radiobutton
 
 from code.Point import Point
 from code.Arena import Arena
+from code.Air import *
 from code.Robot import Robot
 from code.Log import Log
 from code.Simulation import Simulation
@@ -28,16 +29,21 @@ def globalParametersTest():
     print("UP", UP()), print("LEFT", LEFT()), print("DOWN", DOWN()), print("RIGHT",RIGHT())
     print("INSTANT_SENDING_CHANCE", INSTANT_SENDING_CHANCE())
     print("MAX_NUM_OF_VERSIONS", MAX_NUM_OF_VERSIONS())
-    print("MESSAGE_LIFE_TIME", MESSAGE_LIFE_TIME())
-    print("ROBOT_LEANGHT", ROBOT_LEANGHT())
+    print("MESSAGE_LIFE_TIME", MESSAGE_LIFE_TIME()),print("INFINITY", INFINITY())
+    print("MIN_MSG_RANGE", MIN_MSG_RANGE()),print("MAX_MSG_RANGE", MAX_MSG_RANGE())
+    print("NO_MSG", NO_MSG()),print("MSG_LIFE_TIME", MSG_LIFE_TIME()),print("MSG_MAX_VERSION", MSG_MAX_VERSION())
+    print("MSG_WAIT_TIME", MSG_WAIT_TIME())
+
+
 
 
 #Tests Robot class:
 def RobotTest():
     print("**********************RobotTest*****************************************")
+    Robot.static_arena = Arena() #Must give the static_arena a value!!!
+    Robot.static_air = Air()  # Must give the static_arena a value!!!
     r1 = Robot(0)
     print(r1._id)
-    Robot.static_arena = Arena()
     #Env:
     env = r1.getEnv()
     print("getEnv: ",env)
@@ -48,8 +54,21 @@ def RobotTest():
     r1.move(LEFT())
     print("private location log",end=" :")
     for i in r1._private_location_log: print(i.toString(),end=", ")
-    print("\nRandom numbers",end=" :")
-    for i in range(0,20): print(Robot.getRandomDirection(),end=", ")
+    print("\nRandom numbers for direction",end=" :")
+    for i in range(0,20): print(r1.getRandomDirection(),end=", ")
+    print("\nMessage id's", end=" :")
+    for i in range(0, 20): print(r1.creatMessageId(),end=", ")
+
+
+
+globalParametersTest()
+#RobotTest()
+
+
+#MUST HAVE:
+Mylog.close()
+
+
 
 
 #'__str__' is toString in python:
@@ -63,11 +82,3 @@ class A:
 
 ob = A(10)
 print(ob) """
-
-
-#globalParametersTest()
-#RobotTest()
-
-
-#MUST HAVE:
-Mylog.close()

@@ -4,10 +4,14 @@ from random import randint
 from code.Log import Log
 from code.Point import Point
 
+import random
+
 class Arena:
+    _mone_move =0
     def __init__(self):
         self._mat_robot_id = []
         self._Robots = []
+        self._Robots_sort_Random = []
         self._mat_zone = [] #by color (white = 0    gray = 1     black = 2)
 
         for i in range(int(float(ARENA_X()))):
@@ -34,12 +38,15 @@ class Arena:
         # Creates a new robot 'that can move' to variable "Robots"
         for s in range(0, int(ROBOTS_MOVE())):
             self._Robots.append(Robot(s))
+            self._Robots_sort_Random.append(s)
             Log.addLine("create new Robot- " + self._Robots[s].toString())
 
         # Creates a new robot 'that can't move' to variable "Robots"
         for s in range(int(ROBOTS_MOVE()), int(ROBOTS_MOVE())+int(ROBOTS_NOT_MOVE())):
             self._Robots.append(Robot(s))
-            self._Robots[s].CanMove = False
+            self._Robots_sort_Random.append(s)
+            self._Robots[s]._can_move = False
+
             Log.addLine("create new Robot- " + self._Robots[s].toString())
 
         #put the robots on Arena:
@@ -61,7 +68,13 @@ class Arena:
             self._Robots.append(Robot(s))
             self._mat_robot_id[x][y] = self._Robots[s]._id
             self._Robots[s]._real_location = Point(x, y)
+            #self._Robots_sort_Random[s]._real_location = Point(x, y)
+            if(bool3): #self._Robots[s]._can_move == False
+                self._Robots[s]._estimated_location = Point(x, y)
+                self._Robots[s]._estimated_location._deviation = 0
             Log.addLine("put Robot_" + str(self._Robots[s]._id) + self._Robots[s]._real_location.toString())
+
+        self.sortRandomRobotsArray()
 
     """Returns the robot can he move forward(UP, DOWN, LEFT,RIGHT)
     Assumes that that the location of the robot's true, namely:  x>0, y>o, x<ARENA_X(), y<ARENA_Y()-1"""
@@ -70,19 +83,26 @@ class Arena:
         y = self._Robots[id]._real_location._y
         array = [True,True,True,True]
 
-        if(self._mat_robot_id[x][y-1]!=-1 | self._mat_zone[x][y-1]):
+        if (Point.existsXY(x, y-1) == False):
+            array[UP()] = False
+        elif(self._mat_robot_id[x][y-1]!=-1 | self._mat_zone[x][y-1]):
             array[UP()] =False
 
-        if(self._mat_robot_id[x][y+1]!=-1 | self._mat_zone[x][y+1]):
+        if (Point.existsXY(x, y+1) == False):
+            array[DOWN()] = False
+        elif(self._mat_robot_id[x][y+1]!=-1 | self._mat_zone[x][y+1]):
             array[DOWN()] =False
 
-        if(self._mat_robot_id[x-1][y]!=-1 | self._mat_zone[x-1][y]):
+        if (Point.existsXY(x - 1, y) == False):
+            array[LEFT()] = False
+        elif(self._mat_robot_id[x-1][y]!=-1 | self._mat_zone[x-1][y]):
             array[LEFT()] =False
 
-        if(self._mat_robot_id[x+1][y]!=-1 | self._mat_zone[x+1][y]):
+        if(Point.existsXY(x+1, y) == False):
+            array[RIGHT()] = False
+        elif(self._mat_robot_id[x+1][y]!=-1 | self._mat_zone[x+1][y]):
             array[RIGHT()] =False
 
-        print(array)
         return array
 
     """Returns the point where the robot is currently"""
@@ -97,27 +117,41 @@ class Arena:
         if(array[direction]==False):
             return False
         else:
-
+            Arena._mone_move +=1
             x = self._Robots[id]._real_location._x
             y = self._Robots[id]._real_location._y
             self._mat_robot_id[x][y]=-1
 
+            tolog = ""
             if(direction == UP()):
+                tolog = ("Robot " + str(id) + ": move UP From [" + str(x) + "][" + str(y) + "] to [" + str(x) + "][" + str(y-1) + "]")
                 y = y - 1
-                Log.addLine("move the Robot_" + str(id) + " UP to [" + str(x) + "][" + str(y) + "]")
             elif(direction == DOWN()):
+                tolog =("Robot " + str(id) + ": move DOWN From [" + str(x) + "][" + str(y) + "] to [" + str(x) + "][" + str(y+1) + "]")
                 y = y + 1
-                Log.addLine("move the Robot_" + str(id) + " DOWN to [" + str(x) + "][" + str(y) + "]")
             elif (direction == LEFT()):
+                tolog =("Robot " + str(id) + ": move LEFT From [" + str(x) + "][" + str(y) + "] to [" + str(x-1) + "][" + str(y) + "]")
                 x = x - 1
-                Log.addLine("move the Robot_" + str(id) + " LEFT to [" + str(x) + "][" + str(y) + "]")
-            elif (direction == RIGHT()):
+            else:
+                tolog =("Robot " + str(id) + ": move RIGHT From [" + str(x) + "][" + str(y) + "] to [" + str(x+1) + "][" + str(y) + "]")
                 x = x + 1
-                Log.addLine("move the Robot_" + str(id) + " RIGHT to [" + str(x) + "][" + str(y) + "]")
+
+            Log.addLine(tolog)
+            #print(tolog)
             self._mat_robot_id[x][y] = id
             self._Robots[id]._real_location = Point(x,y)
 
             return True
+
+    def sortRandomRobotsArray(self):
+        for i in range(len(self._Robots_sort_Random)):
+            sw = random.randint(0,len(self._Robots_sort_Random)-1)
+            temp = self._Robots_sort_Random[sw]
+            self._Robots_sort_Random[sw] = self._Robots_sort_Random[i]
+            self._Robots_sort_Random[i] = temp
+
+
+
 
 
 

@@ -1,4 +1,3 @@
-
 #private veriables:
 __black_area = []
 __gray_area = []
@@ -63,9 +62,15 @@ def readParameters():
     global __white,__gray,__black
     global __older,__same_age,__younger
     global __up,__left,__down, __right
-    global __instant_sending_chance,__max_num_of_versions,__message_life_time
-    global __robot_leanght
-    global __infinity
+    global __instant_sending_chance,__max_num_of_versions,__message_life_time, __sending_known_deviation
+    global __robot_leanght, __infinity, __min_msg_range, __max_msg_range
+    global __no_msg, __msg_life_time, __msg_max_version,__msg_wait_time
+    global __battery_about_to_end
+    global __Button_number_1, __Button_number_2, __Button_number_3
+    global __battery_cost_walk, __battery_cost_send_msg, __battery_cost_get_msg, __battery_charge_light_speed
+    global __robot_static_Chance_send_msg, __robot_canmove_Chance_send_msg, __robot_canmove_Chance_get_msg
+    global __robot_not_move_color,__robot_move_color
+    global __active_matdistance
 
     # battary_capacity:
     __battary_capacity = int(getVar("BATTARY_CAPACITY"))
@@ -89,16 +94,44 @@ def readParameters():
     __up,__left,__down,__right = int(getVar("UP")),int(getVar("LEFT")),int(getVar("DOWN")),int(getVar("RIGHT"))
     # instant_sending_chance:
     __instant_sending_chance = float(getVar("INSTANT_SENDING_CHANCE"))
+    # sending_known_deviation:
+    __sending_known_deviation = float(getVar("SENDING_KNOWN_DEVIATION"))
     # max_num_of_versions:
     __max_num_of_versions = int(getVar("MAX_NUM_OF_VERSIONS"))
     # message_life_time:
     __message_life_time = int(getVar("MESSAGE_LIFE_TIME"))
     # robot length(for gui):
     __robot_leanght = int(getVar("ROBOT_LEANGHT"))
-
     # For Distance:
     __infinity = int(getVar("INFINITY"))
+    # Accuracy range for ssn of messages:
+    __min_msg_range,__max_msg_range = int(getVar("MIN_MSG_RANGE")),int(getVar("MAX_MSG_RANGE"))
+    # Msg constants:
+    __no_msg, __msg_life_time,__msg_max_version = int(getVar("NO_MSG")),int(getVar("MSG_LIFE_TIME")),int(getVar("MSG_MAX_VERSION"))
+    # Range of time a message must wait before being sent:
+    __msg_wait_time = int(getVar("MSG_WAIT_TIME"))
+    # battery_about_to_end:
+    __battery_about_to_end = float(getVar("BATTERY_ABOUT_TO_END"))
 
+    # Several steps by pressing the buttons:
+    __Button_number_1 = int(getVar("BUTTON_NUMBER_1"))
+    __Button_number_2 = int(getVar("BUTTON_NUMBER_2"))
+    __Button_number_3 = int(getVar("BUTTON_NUMBER_3"))
+
+    # The cost of battery operation:
+    __battery_cost_walk = float(getVar("BATTARY_COST_WALK"))
+    __battery_cost_send_msg = float(getVar("BATTARY_COST_SEND_MSG"))
+    __battery_cost_get_msg = float(getVar("BATTARY_COST_GET_MSG"))
+    __battery_charge_light_speed = float(getVar("BATTARY_CHARGE_LITHT_SPEED"))
+
+    __robot_static_Chance_send_msg = float(getVar("ROBOT_STATIC_CHANCE_SEND_MSG"))
+    __robot_canmove_Chance_send_msg = float(getVar("ROBOT_CANMOVE_CHANCE_SEND_MSG"))
+    __robot_canmove_Chance_get_msg = float(getVar("ROBOT_CANMOVE_CHANCE_GET_MSG"))
+
+    __robot_not_move_color = int(getVar("ROBOTS_NOT_MOVE_COLOR"))
+    __robot_move_color = int(getVar("ROBOTS_MOVE_COLOR"))
+
+    __active_matdistance = int(getVar("ACTIVE_MATDISTANCE"))
 
 #Project Constants:
 def BATTARY_CAPACITY():
@@ -161,6 +194,9 @@ def RIGHT():
 def INSTANT_SENDING_CHANCE():
    return __instant_sending_chance
 
+def SENDING_KNOWN_DEVIATION():
+   return __sending_known_deviation
+
 def MAX_NUM_OF_VERSIONS():
    return __max_num_of_versions
 
@@ -172,4 +208,64 @@ def ROBOT_LEANGHT():
 
 def INFINITY():
     return __infinity
+def MIN_MSG_RANGE():
+    return __min_msg_range
+
+def MAX_MSG_RANGE():
+    return __max_msg_range
+
+def NO_MSG():
+    return __no_msg
+
+def MSG_LIFE_TIME():
+    return __msg_life_time
+
+def MSG_MAX_VERSION():
+    return __msg_max_version
+
+def MSG_WAIT_TIME():       # Range of time a new message must waut before being sent:
+    return __msg_wait_time
+
+def BATTERY_ABOUT_TO_END():
+    return __battery_about_to_end
+
+def BUTTON_NUMBER_1():
+    return __Button_number_1
+
+def BUTTON_NUMBER_2():
+    return __Button_number_2
+
+def BUTTON_NUMBER_3():
+    return __Button_number_3
+
+def BATTARY_COST_WALK():
+    return __battery_cost_walk
+
+def BATTARY_COST_SEND_MSG():
+    return __battery_cost_send_msg
+
+def BATTARY_COST_GET_MSG():
+    return __battery_cost_get_msg
+
+def BATTARY_CHARGE_LITHT_SPEED():
+    return __battery_charge_light_speed
+
+def ROBOT_STATIC_CHANCE_SEND_MSG():
+    return __robot_static_Chance_send_msg
+
+def ROBOT_CANMOVE_CHANCE_SEND_MSG():
+    return __robot_canmove_Chance_send_msg
+
+def ROBOT_CANMOVE_CHANCE_GET_MSG():
+    return __robot_canmove_Chance_get_msg
+
+def ROBOTS_NOT_MOVE_COLOR():
+    return __robot_not_move_color
+
+def ROBOTS_MOVE_COLOR():
+    return __robot_move_color
+
+def ACTIVE_MATDISTANCE():
+    return __active_matdistance
+
 
