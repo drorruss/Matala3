@@ -1,9 +1,6 @@
-from code.Global_Parameters import *
-from code.Robot import Robot
-from code.Arena import Arena
-from code.Message import Message
-from code.Point import Point
-from code.Log import Log
+from MyProject.Global_Parameters import *
+from MyProject.Robot import Robot
+from MyProject.Point import Point
 import math
 
 class Air:
@@ -21,8 +18,6 @@ class Air:
             if (bool(ACTIVE_MATDISTANCE())):
                 Point.fillMatDistance(Air.static_mat_zone,message._mat_distance, message._real_location)
 
-            #Air._self.Id_message = Air._self.mone*1000 +robot._id
-            #Air._self.mone = Air._self.mone+1
             Air._messages.append(message)
 
         return canSend
@@ -44,7 +39,7 @@ class Air:
             if(r == INFINITY() or r<=0): continue
             if(r <=MIN_MSG_RANGE()):
                 Air._messages[i]._snn = (MAX_MSG_RANGE()-r)*(MAX_MSG_RANGE()-r)
-                return Air._messages[i] ##################################put distance to msg
+                return Air._messages[i]
             elif(r >=MAX_MSG_RANGE()):
                 continue
             else:
@@ -65,10 +60,6 @@ class Air:
             return NO_MSG()
         else:
             nearest_messagesa._snn = nearest_messagesa._snn - sum_range
-            #print("\n%%%\nnearest_messagesa._snn:: " + str(nearest_messagesa._snn))
-            #print("sum_range:: " + str(sum_range))
-            #print("_snn:: " + str(nearest_messagesa._snn))
-            ##################################put distance to msg
             return nearest_messagesa
 
     @staticmethod

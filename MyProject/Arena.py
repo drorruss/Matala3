@@ -1,8 +1,8 @@
-from code.Global_Parameters import *
-from code.Robot import Robot
+from MyProject.Global_Parameters import *
+from MyProject.Robot import Robot
 from random import randint
-from code.Log import Log
-from code.Point import Point
+from MyProject.Log import Log
+from MyProject.Point import Point
 
 import random
 
@@ -12,7 +12,7 @@ class Arena:
         self._mat_robot_id = []
         self._Robots = []
         self._Robots_sort_Random = []
-        self._mat_zone = [] #by color (white = 0    gray = 1     black = 2)
+        self._mat_zone = [] # (white = 0    gray = 1     black = 2)
 
         for i in range(int(float(ARENA_X()))):
             self._mat_robot_id.append(int(ARENA_Y())*[-1])
@@ -35,13 +35,13 @@ class Arena:
                 for j in range(black_area_point[b][1], black_area_point[b][3]+1):
                     self._mat_zone[i][j] = BLACK()
 
-        # Creates a new robot 'that can move' to variable "Robots"
+        # Creates a new robot dinamic to variable "Robots"
         for s in range(0, int(ROBOTS_MOVE())):
             self._Robots.append(Robot(s))
             self._Robots_sort_Random.append(s)
             Log.addLine("create new Robot- " + self._Robots[s].toString())
 
-        # Creates a new robot 'that can't move' to variable "Robots"
+        # Creates a new robot static to variable "Robots"
         for s in range(int(ROBOTS_MOVE()), int(ROBOTS_MOVE())+int(ROBOTS_NOT_MOVE())):
             self._Robots.append(Robot(s))
             self._Robots_sort_Random.append(s)
@@ -68,8 +68,8 @@ class Arena:
             self._Robots.append(Robot(s))
             self._mat_robot_id[x][y] = self._Robots[s]._id
             self._Robots[s]._real_location = Point(x, y)
-            #self._Robots_sort_Random[s]._real_location = Point(x, y)
-            if(bool3): #self._Robots[s]._can_move == False
+
+            if(bool3):
                 self._Robots[s]._estimated_location = Point(x, y)
                 self._Robots[s]._estimated_location._deviation = 0
             Log.addLine("put Robot_" + str(self._Robots[s]._id) + self._Robots[s]._real_location.toString())

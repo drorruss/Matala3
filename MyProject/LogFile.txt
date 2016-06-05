@@ -1,0 +1,332 @@
+create Simulation
+create gray area point between: [800, 800, 805, 910]
+create gray area point between: [1, 1, 2, 2]
+create black area point between: [0, 0, 999, 0]
+create black area point between: [0, 0, 0, 999]
+create black area point between: [999, 0, 999, 999]
+create black area point between: [0, 999, 999, 999]
+create black area point between: [200, 200, 210, 240]
+create black area point between: [101, 0, 103, 200]
+create new Robot- ROBOT[id:0 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:1 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:2 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:3 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:4 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:5 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:6 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:7 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:8 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:9 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:10 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:11 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:12 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:13 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:14 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:15 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:16 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:17 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:18 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:19 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:20 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:21 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:22 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:23 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:24 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:25 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:26 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:27 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:28 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:29 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:30 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:31 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:32 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:33 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:34 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:35 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:36 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:37 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:38 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:39 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:40 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:41 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:42 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:43 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:44 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:45 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:46 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:47 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:48 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:49 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:50 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:51 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:52 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:53 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:54 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:55 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:56 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:57 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:58 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:59 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:60 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:61 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:62 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:63 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:64 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:65 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:66 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:67 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:68 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:69 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+create new Robot- ROBOT[id:70 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:False ,message_log:[]]
+create new Robot- ROBOT[id:71 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:False ,message_log:[]]
+create new Robot- ROBOT[id:72 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:False ,message_log:[]]
+create new Robot- ROBOT[id:73 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:False ,message_log:[]]
+create new Robot- ROBOT[id:74 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:False ,message_log:[]]
+create new Robot- ROBOT[id:75 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:False ,message_log:[]]
+create new Robot- ROBOT[id:76 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:False ,message_log:[]]
+create new Robot- ROBOT[id:77 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:False ,message_log:[]]
+create new Robot- ROBOT[id:78 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:False ,message_log:[]]
+create new Robot- ROBOT[id:79 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:False ,message_log:[]]
+put Robot_0[101, 561] dev =0
+put Robot_1[976, 123] dev =0
+put Robot_2[199, 971] dev =0
+put Robot_3[987, 592] dev =0
+put Robot_4[289, 212] dev =0
+put Robot_5[838, 748] dev =0
+put Robot_6[309, 539] dev =0
+put Robot_7[355, 650] dev =0
+put Robot_8[660, 676] dev =0
+put Robot_9[295, 853] dev =0
+put Robot_10[497, 708] dev =0
+put Robot_11[50, 912] dev =0
+put Robot_12[596, 324] dev =0
+put Robot_13[545, 737] dev =0
+put Robot_14[983, 239] dev =0
+put Robot_15[798, 307] dev =0
+put Robot_16[511, 876] dev =0
+put Robot_17[877, 84] dev =0
+put Robot_18[817, 902] dev =0
+put Robot_19[171, 267] dev =0
+put Robot_20[824, 784] dev =0
+put Robot_21[794, 241] dev =0
+put Robot_22[535, 552] dev =0
+put Robot_23[496, 132] dev =0
+put Robot_24[390, 713] dev =0
+put Robot_25[906, 522] dev =0
+put Robot_26[197, 56] dev =0
+put Robot_27[750, 458] dev =0
+put Robot_28[300, 993] dev =0
+put Robot_29[689, 760] dev =0
+put Robot_30[38, 761] dev =0
+put Robot_31[769, 559] dev =0
+put Robot_32[846, 111] dev =0
+put Robot_33[108, 42] dev =0
+put Robot_34[956, 173] dev =0
+put Robot_35[937, 593] dev =0
+put Robot_36[247, 342] dev =0
+put Robot_37[150, 382] dev =0
+put Robot_38[778, 447] dev =0
+put Robot_39[163, 279] dev =0
+put Robot_40[888, 825] dev =0
+put Robot_41[232, 512] dev =0
+put Robot_42[957, 514] dev =0
+put Robot_43[230, 508] dev =0
+put Robot_44[415, 286] dev =0
+put Robot_45[910, 848] dev =0
+put Robot_46[383, 59] dev =0
+put Robot_47[189, 952] dev =0
+put Robot_48[23, 834] dev =0
+put Robot_49[176, 380] dev =0
+put Robot_50[909, 996] dev =0
+put Robot_51[482, 422] dev =0
+put Robot_52[569, 201] dev =0
+put Robot_53[912, 202] dev =0
+put Robot_54[402, 894] dev =0
+put Robot_55[554, 557] dev =0
+put Robot_56[168, 658] dev =0
+put Robot_57[386, 202] dev =0
+put Robot_58[304, 445] dev =0
+put Robot_59[718, 437] dev =0
+put Robot_60[495, 580] dev =0
+put Robot_61[617, 651] dev =0
+put Robot_62[604, 536] dev =0
+put Robot_63[918, 617] dev =0
+put Robot_64[46, 137] dev =0
+put Robot_65[87, 482] dev =0
+put Robot_66[450, 915] dev =0
+put Robot_67[76, 512] dev =0
+put Robot_68[720, 905] dev =0
+put Robot_69[776, 118] dev =0
+put Robot_70[158, 594] dev =0
+put Robot_71[14, 298] dev =0
+put Robot_72[423, 67] dev =0
+put Robot_73[969, 397] dev =0
+put Robot_74[496, 526] dev =0
+put Robot_75[668, 370] dev =0
+put Robot_76[739, 249] dev =0
+put Robot_77[124, 222] dev =0
+put Robot_78[567, 987] dev =0
+put Robot_79[921, 913] dev =0
+
+
+####    Simulation: Time = 1   ####
+Robot 18 sent a new message: MSG[id_message:1018, id source:18 ,Version:0 ,Snn:0]
+Robot 64: move RIGHT From [46][137] to [47][137]
+Robot 5: move RIGHT From [838][748] to [839][748]
+Robot 11: move UP From [50][912] to [50][911]
+Robot 50: move RIGHT From [909][996] to [910][996]
+Robot 67: move LEFT From [76][512] to [75][512]
+Robot 71: Receiving Messages.  --->  Not received!
+Robot 40: move LEFT From [888][825] to [887][825]
+Robot 62: move LEFT From [604][536] to [603][536]
+Robot 20: move LEFT From [824][784] to [823][784]
+Robot 14: move LEFT From [983][239] to [982][239]
+Robot 42: move LEFT From [957][514] to [956][514]
+Robot 48: move UP From [23][834] to [23][833]
+Robot 68 create a new message and send it soon
+Robot 16: move UP From [511][876] to [511][875]
+Robot 66: move UP From [450][915] to [450][914]
+Robot 58: move RIGHT From [304][445] to [305][445]
+Robot 44: move RIGHT From [415][286] to [416][286]
+Robot 61: move RIGHT From [617][651] to [618][651]
+Robot 37: move UP From [150][382] to [150][381]
+Robot 74 create a new message and send it soon
+Robot 70 create a new message and send it soon
+Robot 10: move LEFT From [497][708] to [496][708]
+Robot 24: move UP From [390][713] to [390][712]
+Robot 6: move LEFT From [309][539] to [308][539]
+Robot 46: move UP From [383][59] to [383][58]
+Robot 30: move UP From [38][761] to [38][760]
+Robot 65: move RIGHT From [87][482] to [88][482]
+Robot 60: move RIGHT From [495][580] to [496][580]
+Robot 57: move UP From [386][202] to [386][201]
+Robot 45: move RIGHT From [910][848] to [911][848]
+Robot 36: move LEFT From [247][342] to [246][342]
+Robot 8: move UP From [660][676] to [660][675]
+Robot 35: move UP From [937][593] to [937][592]
+Robot 28: move UP From [300][993] to [300][992]
+Robot 13: move LEFT From [545][737] to [544][737]
+Robot 22: move RIGHT From [535][552] to [536][552]
+Robot 33: move UP From [108][42] to [108][41]
+Robot 32: move LEFT From [846][111] to [845][111]
+Robot 31: move UP From [769][559] to [769][558]
+Robot 7: move LEFT From [355][650] to [354][650]
+Robot 0: move RIGHT From [101][561] to [102][561]
+Robot 4 create a new message and send it soon
+Robot 59: move UP From [718][437] to [718][436]
+Robot 75 create a new message and send it soon
+Robot 1: move RIGHT From [976][123] to [977][123]
+Robot 63: move LEFT From [918][617] to [917][617]
+Robot 51: move LEFT From [482][422] to [481][422]
+Robot 53: move LEFT From [912][202] to [911][202]
+Robot 56: move LEFT From [168][658] to [167][658]
+Robot 26: move LEFT From [197][56] to [196][56]
+Robot 23: move RIGHT From [496][132] to [497][132]
+Robot 43: move LEFT From [230][508] to [229][508]
+Robot 77 create a new message and send it soon
+Robot 3: move RIGHT From [987][592] to [988][592]
+Robot 29: move UP From [689][760] to [689][759]
+Robot 38: move RIGHT From [778][447] to [779][447]
+Robot 47: move UP From [189][952] to [189][951]
+Robot 49: move RIGHT From [176][380] to [177][380]
+Robot 76 create a new message and send it soon
+Robot 79 sent a new message: MSG[id_message:1079, id source:79 ,Version:0 ,Snn:0]
+Robot 39: move RIGHT From [163][279] to [164][279]
+Robot 17: move UP From [877][84] to [877][83]
+Robot 54: move LEFT From [402][894] to [401][894]
+Robot 15: move LEFT From [798][307] to [797][307]
+Robot 25: move RIGHT From [906][522] to [907][522]
+Robot 69: move RIGHT From [776][118] to [777][118]
+Robot 12 create a new message and send it soon
+Robot 9: move UP From [295][853] to [295][852]
+Robot 21: move RIGHT From [794][241] to [795][241]
+Robot 41 create a new message and send it soon
+Robot 73 create a new message and send it soon
+Robot 72 create a new message and send it soon
+Robot 78 create a new message and send it soon
+Robot 52: move LEFT From [569][201] to [568][201]
+Robot 34: move RIGHT From [956][173] to [957][173]
+Robot 2: move UP From [199][971] to [199][970]
+Robot 55: move UP From [554][557] to [554][556]
+Robot 27: move RIGHT From [750][458] to [751][458]
+Robot 19: move LEFT From [171][267] to [170][267]
+ROBOT[id:0 , battery_status:99.0 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:1 , battery_status:99.0 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:2 , battery_status:99.0 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:3 , battery_status:99.0 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:4 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:5 , battery_status:99.0 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:6 , battery_status:99.0 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:7 , battery_status:99.0 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:8 , battery_status:99.0 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:9 , battery_status:99.0 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:10 , battery_status:99.0 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:11 , battery_status:99.0 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:12 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:13 , battery_status:99.0 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:14 , battery_status:99.0 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:15 , battery_status:99.0 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:16 , battery_status:99.0 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:17 , battery_status:99.0 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:18 , battery_status:98.0 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[1018]]
+ROBOT[id:19 , battery_status:99.0 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:20 , battery_status:99.0 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:21 , battery_status:99.0 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:22 , battery_status:99.0 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:23 , battery_status:99.0 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:24 , battery_status:99.0 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:25 , battery_status:99.0 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:26 , battery_status:99.0 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:27 , battery_status:99.0 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:28 , battery_status:99.0 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:29 , battery_status:99.0 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:30 , battery_status:99.0 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:31 , battery_status:99.0 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:32 , battery_status:99.0 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:33 , battery_status:99.0 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:34 , battery_status:99.0 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:35 , battery_status:99.0 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:36 , battery_status:99.0 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:37 , battery_status:99.0 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:38 , battery_status:99.0 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:39 , battery_status:99.0 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:40 , battery_status:99.0 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:41 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:42 , battery_status:99.0 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:43 , battery_status:99.0 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:44 , battery_status:99.0 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:45 , battery_status:99.0 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:46 , battery_status:99.0 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:47 , battery_status:99.0 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:48 , battery_status:99.0 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:49 , battery_status:99.0 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:50 , battery_status:99.0 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:51 , battery_status:99.0 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:52 , battery_status:99.0 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:53 , battery_status:99.0 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:54 , battery_status:99.0 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:55 , battery_status:99.0 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:56 , battery_status:99.0 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:57 , battery_status:99.0 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:58 , battery_status:99.0 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:59 , battery_status:99.0 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:60 , battery_status:99.0 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:61 , battery_status:99.0 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:62 , battery_status:99.0 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:63 , battery_status:99.0 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:64 , battery_status:99.0 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:65 , battery_status:99.0 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:66 , battery_status:99.0 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:67 , battery_status:99.0 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:68 , battery_status:100 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:69 , battery_status:99.0 ,estimated_location:[500.0, 500.0] dev =2000 ,can_move:True ,message_log:[]]
+ROBOT[id:70 , battery_status:100 ,estimated_location:[158, 594] dev =0 ,can_move:False ,message_log:[]]
+ROBOT[id:71 , battery_status:99.0 ,estimated_location:[14, 298] dev =0 ,can_move:False ,message_log:[]]
+ROBOT[id:72 , battery_status:100 ,estimated_location:[423, 67] dev =0 ,can_move:False ,message_log:[]]
+ROBOT[id:73 , battery_status:100 ,estimated_location:[969, 397] dev =0 ,can_move:False ,message_log:[]]
+ROBOT[id:74 , battery_status:100 ,estimated_location:[496, 526] dev =0 ,can_move:False ,message_log:[]]
+ROBOT[id:75 , battery_status:100 ,estimated_location:[668, 370] dev =0 ,can_move:False ,message_log:[]]
+ROBOT[id:76 , battery_status:100 ,estimated_location:[739, 249] dev =0 ,can_move:False ,message_log:[]]
+ROBOT[id:77 , battery_status:100 ,estimated_location:[124, 222] dev =0 ,can_move:False ,message_log:[]]
+ROBOT[id:78 , battery_status:100 ,estimated_location:[567, 987] dev =0 ,can_move:False ,message_log:[]]
+ROBOT[id:79 , battery_status:98.0 ,estimated_location:[921, 913] dev =0 ,can_move:False ,message_log:[1079]]

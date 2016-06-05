@@ -1,4 +1,4 @@
-from code.Global_Parameters import *
+from MyProject.Global_Parameters import *
 import math
 
 class Point:
@@ -19,14 +19,12 @@ class Point:
             self._deviation = point1._deviation
         elif (point1._deviation - dis - self._deviation >= 0):  # self in point1
             return
-        elif(dis>point1._deviation + self._deviation):#Error?
+        elif(dis>point1._deviation + self._deviation):
             if(point1._deviation < self._deviation):
                 self._x = point1._x
                 self._y = point1._y
                 self._deviation = point1._deviation
-        else: ###"Circles touching" - need to do Union:###
-            # Calculating a straight line out of the two major circuits:
-            # y = m1 * x +d1
+        else:
             if(self._x-point1._x == 0): return
             m1 = +(0.0 + self._y-point1._y)/(self._x-point1._x)
 

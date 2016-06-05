@@ -1,13 +1,11 @@
-from code.Point import *
-from code.Message import *
-#from code.Air import *
-from code.Global_Parameters import *
-from code.Log import Log
-from code.Message import Message
-from code.Global_Parameters import *
+
+from MyProject.Message import *
+from MyProject.Log import Log
+from MyProject.Message import Message
+from MyProject.Global_Parameters import *
 
 from random import randint
-#Life is good!
+
 class Robot:
     static_arena = -1
     static_air = -1
@@ -20,15 +18,15 @@ class Robot:
         self._private_location = Point(0,0)
         self._estimated_location = Point(ARENA_X()/2,ARENA_Y()/2)
         self._estimated_location._deviation = ARENA_X()+ARENA_Y()
-        self._real_location = Point(0,0) #later put real location.
+        self._real_location = Point(0,0)
 
-        self._message_log = []          #All received messages
-        self._private_location_log = [Point(0,0)] #Holds all the robots movements as list of points
-        self._neighbors_loc = [INFINITY()]*(ROBOTS_MOVE()+ROBOTS_NOT_MOVE())      #Can save all his neighbors location
-        self._time = -1                 #Robots always knows the time.
+        self._message_log = []
+        self._private_location_log = [Point(0,0)] #
+        self._neighbors_loc = [INFINITY()]*(ROBOTS_MOVE()+ROBOTS_NOT_MOVE())
+        self._time = -1
         self._currently_sending = NO_MSG()
         self._currently_get_message = NO_MSG()
-        self._action_time = INFINITY()    #When to do my next action(next sending).
+        self._action_time = INFINITY()
         self._current_zone = -1
 
     def doAction(self):
@@ -99,16 +97,16 @@ class Robot:
         elif x < ROBOT_CANMOVE_CHANCE_GET_MSG()+ROBOT_CANMOVE_CHANCE_SEND_MSG() and self._battery_status > BATTARY_COST_GET_MSG():  # get message.
             self.getMessage()
             return
-        elif self._battery_status > BATTARY_COST_WALK(): # Move randomly.
+        elif self._battery_status > BATTARY_COST_WALK():
             direction = self.getRandomDirection()
             self.move(direction)
-            #Log.addLine("Robot " + str(self._id) + ": Moving randomly.")
+
             return
 
 
 
 
-            #Robot asks 'Arena' in witch directions can he move.
+
     def getEnv(self):
         return Robot.static_arena.getEnv(self._id)
 

@@ -1,10 +1,7 @@
-from code.Point import Point
-from code.Global_Parameters import *
+from MyProject.Point import Point
+from MyProject.Global_Parameters import *
 
-#TODO:
-# add senders to 'sender_history'
 
-#good day!
 class Message:
     def __init__(self,Id_Sender,Id_Message,Time,sender_estimated_loc):
         self._id_source = Id_Sender    # Upond creation: source = sender.

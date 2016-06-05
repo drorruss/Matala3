@@ -1,19 +1,13 @@
-from code.Global_Parameters import *
-from code.Robot import Robot
-from code.Arena import Arena
-from code.Message import Message
-from code.Point import Point
-from code.Air import Air
-from code.Log import Log
-
-import numpy as np
+from MyProject.Global_Parameters import *
+from MyProject.Robot import Robot
+from MyProject.Arena import Arena
+from MyProject.Point import Point
+from MyProject.Air import Air
+from MyProject.Log import Log
 import matplotlib.pyplot as plt
 from matplotlib.widgets import Button
-import webbrowser
 
 
-
-import matplotlib.cm as cm
 
 class Simulation:
     __self = -1
@@ -89,8 +83,7 @@ class Simulation:
         plt.show()
 
 
-    """def actionMsg1(self, event):
-        webbrowser.open("LogFile.txt")"""
+
 
     def actionButton1(self, event):
         self.action(BUTTON_NUMBER_1())
