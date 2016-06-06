@@ -116,7 +116,6 @@ class Simulation:
             Log.addLine(self._Arena._Robots[i].toString())
 
 
-        #plt.close()
         self.showGUI()
 
 
